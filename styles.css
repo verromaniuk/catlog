@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-family: "Georgia", serif;
+  font-size: 24px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+header nav ul li a:hover {
+  font-weight: bold;
+}
+
+/* Main Section */
+main h2 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-button,
+.layout-button {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.layout-button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Content Section */
+.content {
+  margin-top: 30px;
+}
+
+.content h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.content .content-image {
+  width: 100%;
+  height: 300px;
+  background-color: gray;
+  margin: 20px 0;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filter-group {
+    align-items: flex-start;
+  }
+}
