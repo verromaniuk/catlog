@@ -1,126 +1,160 @@
 /* General Styles */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: black;
-  color: white;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header .logo {
-  font-family: "Georgia", serif;
-  font-size: 24px;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-}
-
-header nav ul li a:hover {
-  font-weight: bold;
-}
-
-/* Main Section */
-main h2 {
-  font-size: 18px;
-  margin-top: 20px;
-}
-
-.filters {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 0;
-}
-
-.filter-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.filter-button,
-.layout-button {
-  background-color: gray;
-  border: none;
-  color: white;
-  padding: 8px 12px;
-  margin: 5px 0;
-  cursor: pointer;
-}
-
-.filter-button:hover,
-.layout-button:hover {
-  background-color: white;
-  color: black;
-}
-
-/* Content Section */
-.content {
-  margin-top: 30px;
-}
-
-.content h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.content p {
-  font-size: 16px;
-  margin: 5px 0;
-}
-
-.content .content-image {
-  width: 100%;
-  height: 300px;
-  background-color: gray;
-  margin: 20px 0;
-}
-
-.description {
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-/* Footer */
-footer {
-  margin-top: 20px;
-  text-align: center;
-}
-
-footer p {
-  font-size: 14px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .filters {
-    flex-direction: column;
-    gap: 10px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
   }
-
+  
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo {
+    font-family: "Georgia", serif;
+    font-size: 28px;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  header nav ul li a:hover {
+    font-weight: bold;
+  }
+  
+  /* Intro Section */
+  .intro {
+    text-align: center;
+    font-size: 16px;
+    margin: 20px 0 30px;
+  }
+  
+  /* Filters Section */
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
   .filter-group {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
   }
-}
+  
+  .filter-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .dropdown {
+    background-color: gray;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  .dropdown:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .layout-button {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    margin: 5px 0;
+  }
+  
+  .layout-button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Content Section */
+  .content {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .details {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .content-image {
+    width: 100%;
+    height: 300px;
+    background-color: gray;
+    margin: 20px 0;
+  }
+  
+  .description {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+    margin: 20px 0;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
+  /* Black Box Reveal */
+  .bottom-black-box {
+    position: fixed;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transition: bottom 0.3s;
+  }
+  
+  .bottom-black-box p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  /* Show black box on hover */
+  body:hover .bottom-black-box {
+    bottom: 0;
+  }
+  

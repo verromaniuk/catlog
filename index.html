@@ -19,33 +19,39 @@
     </header>
 
     <main>
-      <h2>Welcome to the catalogue of activist art.</h2>
+      <h2 class="intro">Welcome to the catalogue of activist art.</h2>
       <div class="filters">
         <div class="filter-group">
-          <p>Type</p>
-          <button class="filter-button">film</button>
-          <button class="filter-button">art</button>
+          <label for="type">Type</label>
+          <select id="type" class="dropdown">
+            <option value="film">Film</option>
+            <option value="art">Art</option>
+          </select>
         </div>
         <div class="filter-group">
-          <p>Date</p>
-          <button class="filter-button">oldest first</button>
-          <button class="filter-button">newest first</button>
-          <button class="filter-button">by year</button>
+          <label for="date">Date</label>
+          <select id="date" class="dropdown">
+            <option value="oldest">Oldest First</option>
+            <option value="newest">Newest First</option>
+            <option value="year">By Year</option>
+          </select>
         </div>
         <div class="filter-layout">
-          <button class="layout-button">one per page</button>
-          <button class="layout-button">two per page</button>
-          <button class="layout-button">list</button>
+          <button class="layout-button" onclick="setLayout('one')">One per Page</button>
+          <button class="layout-button" onclick="setLayout('two')">Two per Page</button>
+          <button class="layout-button" onclick="setLayout('list')">List</button>
         </div>
       </div>
 
       <section class="content">
-        <h3>My Eyes Don't Lie</h3>
-        <p>film, Iceland, 2023</p>
+        <h3 class="title">My Eyes Don’t Lie</h3>
+        <p class="details">film, Iceland, 2023</p>
         <div class="content-image"></div>
         <p class="description">
           Lorem ipsum dolor sit amet. Ut exercitationem tempora ut rerum minus et itaque quia!
-          Est ratione quia At harum maiores qui optio neque.
+          Est ratione quia At harum maiores qui optio neque. Qui molitia facere in ratione saepe
+          et rerum sunt quo nesciunt molestias et molestias molestiae. At animi enim qui architecto
+          voluptas et culpa quod non ratione quisquam aut consequuntur deleniti aut voluptas commodi.
         </p>
       </section>
     </main>
@@ -53,6 +59,12 @@
     <footer>
       <p>Subscribe to our newsletter</p>
     </footer>
+
+    <div class="bottom-black-box">
+      <p>This is a revealable black box at the bottom of the page.</p>
+    </div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
